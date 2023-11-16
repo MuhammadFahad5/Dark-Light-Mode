@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dark-light.css">
+    <title>Dark-Light-Mode</title>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav class="row">
+                <div class="logo">
+                    <img src="img/Ababeel! (3)-1.png" alt="">
+                    <button class="nav-btn"><img src="img/dark-light.png" alt="" id="icon"></button>
+                </div>
+
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><button class="nav-btn"><img src="img/dark-light.png" alt="" id="icon"></button></li>
+                </ul>
+            </nav>
+
+        </div>
+
+
+    </header>
+    <main>
+        <section class="hero-section">
+            <div class="container">
+                <div class="row col2">
+                    <div class="col">
+                        <h1>I'm <span>Muhammad</span> Fahad</h1>
+                        <p>
+                            This Web page is for Testing purpose specially the Dark and Light mood Feature.
+                        </p>
+                        <p>Every thing is working fine.</p>
+                        <a href="">Download File</a>
+                    </div>
+                    <div class="col">
+                        <img src="img/Untitled design (1).png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+  
+
+
+    <script src="js/jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            // if ($("body").css("color", "#212121")) {
+            //     $("#icon").attr("src", "img/sun.png");
+
+            // } else {
+            //     $("#icon").attr("src", "img/moon.png");
+            // }
+
+            $(".nav-btn").click(function () {
+                $("body").toggleClass('dark');
+
+            })
+        })
+    </script>
+
+</body>
+</html>
